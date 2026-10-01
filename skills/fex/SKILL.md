@@ -104,7 +104,7 @@ Do not try to modify a SquashFS image in place. Use the extracted RootFS and the
 
 ```bash
 cd "$HOME/.local/share/fex-emu/RootFS/Ubuntu_24_04"
-sudo ./chroot.py chroot
+./chroot.py chroot
 ```
 
 Inside the x86-64 chroot:
@@ -139,3 +139,8 @@ Test the exact `Exec=` command in a terminal before creating the launcher.
 ## The rule
 
 Check three separate facts: the RootFS exists, FEX has selected it, and the RootFS is writable when guest packages must be installed. Package presence alone proves none of them.
+
+## References
+
+- [FEX RootFS setup](https://wiki.fex-emu.com/index.php/Development:Setting_up_RootFS)
+- [FEX configuration](https://wiki.fex-emu.com/index.php/Development:Configuring_FEX)
